@@ -2,6 +2,10 @@ ErrorDocument 404 404.html
 ErrorDocument 403 403.html
 ErrorDocument 500 500.html
 
+# Deny downloading .htaccess
+<Files ".ht*">
+    Require all denied
+</Files>
 
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
@@ -11,3 +15,4 @@ DirectoryIndex index.html
 #PHP (?)
 LoadModule php5_module modules/php5apache2_4.dll
 
+PHPIniDir "modules/php.ini"
