@@ -1,8 +1,8 @@
 <?php
-$receiver = "wicaksono.com@gmail.com";
+$receiver = "User@Celeron";
 $msg = "Halo! Cuma ngetest!";
 $title = "Hello,world!";
-mail("galang2@galang2.pe.hu", $title, $msg);
+mail($receiver, $title, $msg);
 
 ?>
 

@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>About PHP</title>
+		<link rel="icon" href="/phpinfo.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42" />
 	</head>
 	<body>
 	<?php
