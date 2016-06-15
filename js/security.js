@@ -53,17 +53,17 @@ World
  		 00
 	 	 00
     312	 00  212
-  001200010000000001
-  012423130001224353
-  111213000034892332
-  000000000082302434
+  0012000100000000
+  0124231300012243
+  1121300003489232
+  0000000082302434
 */
 
 function cek(){
 	function buat(){
 		var p = document.createElement("p");
 		document.body.appendChild(p);
-		p.innerHTML = '<h3>Daftar Sevret Key </h3>   \
+		p.innerHTML = '<h3>Daftar Secret Key </h3>   \
 		<object width="910" height="340" type="text/plain" data="message.txt" border="0"style="overflow: hidden;" />';
 	}
     if (jawaban3.checked && pert2kol1.checked){
@@ -71,7 +71,7 @@ function cek(){
 		<object width="910" height="340" type="text/plain" data="encrypted.txt" border="0"style="overflow: hidden;" />';
 	document.title = "Secret Key...";
     }else{ //if (jawaban3.checked = false && pert2kol1.checked = false){
-		document.getElementById("Result").innerHTML = 'Coba Lagi ;-} >\
+		document.getElementById("Result").innerHTML = 'Coba Lagi ;-} \
 		<br/>\
 		<button onclick="location.reload()">Coba Lagi</button>';
 		document.title = "Oops!";
