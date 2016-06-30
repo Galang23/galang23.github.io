@@ -64,7 +64,7 @@ Disallow: /css/
 Disallow: /fonts/
 
 User-agent: Googlebot
-Disallow: /
+Allow: /
 Allow: /about.html
 Disallow: /contact.html
 Disallow: /tugas-sekolah/*
@@ -72,8 +72,8 @@ Allow: /news/
 Disallow: /post.html
 Disallow: /index2.html
 Allow: /features/
-Allow: /Gambar/ 
-Allow: /css/
+Disallow: /Gambar/ 
+Disallow: /css/
 Allow: /fonts/
 
 User-agent: HTTrack
