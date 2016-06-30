@@ -68,13 +68,14 @@ Allow: /
 Allow: /about.html
 Disallow: /contact.html
 Disallow: /tugas-sekolah/*
-Allow: /news/
+Allow: /news
 Disallow: /post.html
 Disallow: /index2.html
 Allow: /features/
+Disallow: /news
 Disallow: /Gambar/ 
 Disallow: /css/
-Allow: /fonts/
+Disallow: /fonts/
 
 User-agent: HTTrack
 Allow: /index.html
