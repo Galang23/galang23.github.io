@@ -6,7 +6,7 @@
 
 
 git add . -v
-echo -n "Commit message:"
+echo -n "Commit message: "
 read MESSAGE
 git commit -m "$MESSAGE"
 echo -n "Pushing change to Galang23 @ branch master..."
