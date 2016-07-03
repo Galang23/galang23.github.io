@@ -3,3 +3,7 @@
 *.tmp
 ~$*.doc
 ~$*.docx
+
+# Private files
+push.sh
+*.php
