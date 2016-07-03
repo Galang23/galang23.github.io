@@ -36,13 +36,20 @@
 			</ul>
 		</div>
 	</div -->
-	<div style="text-align: center; width: 356px; padding: 31px; margin-top: 19px; margin-left: 450px; float: center;" method="POST">
+	<div style="text-align: center;" method="POST">
 	<button type="button" onclick="document.getElementById('demo').innerHTML = Date();"> Tanggal </button>
 		<p id="demo"></p>
 	<form style="text-align: center" method="GET">
 		<p style="color: red">Sebelum masuk ke website utama, harap selesaikan captcha dibawah ini!</p>
 		<br/>
-		<div style="text-align: center" class="g-recaptcha" data-sitekey="6Le2fxcTAAAAALH9N4jdAY1vN8G2oFgCkBMK6CZH"></div >
+		<div style="text-align: center;  width: 356px; padding: 31px; margin-top: 19px; margin-left: 450px; float: center;" class="g-recaptcha" data-sitekey="6Le2fxcTAAAAALH9N4jdAY1vN8G2oFgCkBMK6CZH"></div >
+		<script>
+		if (grecaptcha.getResponse() == ""){
+			alert("You can't proceed!");
+		} else {
+		alert("Thank you");
+		}
+		</script>
 		<!--div class="g-recaptcha" data-sitekey="6Lcd3BsTAAAAAMXnv-r7KXbV72Jc000YTydJCfTM"></div -->
 		<br/>
 		<input type="submit" value='Verify' />
