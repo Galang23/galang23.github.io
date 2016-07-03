@@ -73,7 +73,7 @@ img {
 	text-transform: uppercase;
 }
 /** Navigation **/
-#box {
+.box {
 	width: 200px;
 	margin: 2px auto;
 	padding: 0 80px;
