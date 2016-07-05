@@ -5,5 +5,5 @@
 ~$*.docx
 
 # Private files
-push.sh
+*push.sh
 *.php
