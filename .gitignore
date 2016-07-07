@@ -6,4 +6,5 @@
 
 # Private files
 *push.sh
+push.bat
 *.php
