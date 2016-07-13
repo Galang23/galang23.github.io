@@ -1,4 +1,4 @@
-/* YANG TERTULIS DISINI ADALAH PEMILIK, HOST, PENGEDIT HALAMAN, DAN SUMBER TEMPLATE WEBSIT */
+﻿/* YANG TERTULIS DISINI ADALAH PEMILIK, HOST, PENGEDIT HALAMAN, DAN SUMBER TEMPLATE WEBSIT */
 
 Owner: Suwarna Adhi Galang Wicaksono
 Facebook.com/suwarnaadhi.galangwicaksono
@@ -16,4 +16,4 @@ Source: freewebsitetemplates.com
 
 ♦♣♠•◘○◙♂♀♪♫☼►◄↕¶§▬↨↑↓→←∟↔▲
 
-(C) 2015 Galang2
+(C) 2016 Galang2
