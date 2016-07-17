@@ -5,7 +5,7 @@
     server with default setting (user 'root' with no password) */
 
     //$link = mysqli_connect("127.0.0.1:3306", "root", "");
-    $link = mysqli_connect("mysql.idhostinger.com:3306", "u133077938_user1", "rahasia");
+    $link = mysqli_connect("mysql.serversfree.com:3306", "u298619941_glg", "galang88");
 	// Check connection
     if($link === false){
         die("ERROR: Could not connect. " . mysqli_connect_error());
