@@ -6,6 +6,18 @@
 	<title>Tentang Galang23 - Galang23</title>
 	<link rel="stylesheet" href="/css/style.css" type="text/css" />
 	<link rel="icon" href="/Gambar/favicon.ico" />
+	<script>
+	var about1 = document.getElementById("about1");
+	var about2 = document.getElementById("about2");
+	function hide(){
+		about1.style.visibility = "hidden";
+		about2.style.visibility = "hidden";
+	}
+	function show(id){
+		about1.style.visibility = "visible";
+		about2.style.visibility = "visible";
+	}
+	</script>
 </head>
 
 <body>
@@ -37,26 +49,26 @@
 		<div id="about">
 			<h1>Tentang Galang23</h1>
 			<h2>Siapakah Galang23?</h2>
-			<p>
+			<p id="about1" onmouseover="show()" onmouseout="hide()">
 				Galang23 memiliki nama asli Suwarna Adhi Galang Wicaksono dan tertarik dengan ilmu komputer <br/>
 				Tidak semua anak muda di Negeri ini tertarik dengan ilmu komputer karena ilmu komputer adalah ilmu yang susah dipahami oleh sebagian besar anak muda.<br/>
 				Sebenarnya ilmu komputer mudah dipahami jika dipelajari dari awal seperti mempelajari Microsoft Office Word, Microsoft Office PowerPoint dan lainnya. Hingga mempelajarinya ke bahasa pemrograman dasar seperti HTML dan CSS hingga pada akhirnya mempelajari bahasa pemrograman tingkat lanjut seperti C++, Java, dan JavaScript
 			</p>
 			<h2>Darimanakah Galang23?</h2>
-			<p>
-				Galang23 berasal dari Blitar yang memiliki Kartu Keluarga dari Sidoarjo dan sekarang tinggal di Surabaya.
+			<p id="about2" onmouseover='show()' onmouseout='hide()'>
+				Galang23 berasal dari Blitar yang sekarang tinggal di Surabaya.<br/>
 				Lahir pada hari Jum'at Legi tanggal 04 Juli 2003.
 			</p>
 			
-			<h2>Dimanakah Galang23 Bersekolah?</h2>
-			<p>
+			<h2 onmouseover="Console.log = 'Anda haru inspect';">Dimanakah Galang23 Bersekolah?</h2>
+			<p>Entahlah, hanya yang mengetahuinya yang tahu.</p>
+			<p id="about3" style="display: none;">
 				Sekarang dia kelas I, bersekolah di <a href= "http://smpn3sby.sch.id">SMP Negeri 3 Surabaya</a>
 			</p>
-			<center>
+			<p></p>
 				<h2>
 					Terima Kasih Sudah Mengunjungi Website-ku yang Biasa Saja!
 				</h2>
-			</center>
 <!--			<p>
 				Design version 9<br/> Code version 3<br/> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/zerotype/">Zerotype Website Template</a>.<br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.<br> Please feel free to remove some or all the text and links of this page and replace it with your own About content.
 			</p>  -->
