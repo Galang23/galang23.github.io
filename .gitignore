@@ -5,9 +5,8 @@
 ~$*.docx
 
 # Private files
-*push.sh
-push.bat
 *.php
-Terrasavr.swf
+*.bat
+*.swf
 *.sh
 simplegit
