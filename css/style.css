@@ -176,6 +176,20 @@ h2 {
 	line-height: 24px;
 	margin: 0 0 12px;
 }
+h3{
+	color: #4a4a4a;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 12px;
+}
+h4{
+	color: #5d5d5d;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 12px;
+}
 p {
 	color: #585858;
 	font-size: 16px;
