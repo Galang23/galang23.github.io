@@ -1,0 +1,79 @@
+#!/bin/sh
+
+# Copyright (C) 2016 Galang23
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# Git program was licensed under GPL v2
+
+gitcheck(){
+	if hash git 2> /dev/null; then
+		echo "No argument specified, please use pu.sh --help for arguments.";
+		echo "";
+	else
+		echo "ERROR:   You didn't install Git in this computer";
+		echo "The program will exiting automatically...";
+		sleep 3;
+	fi
+}
+
+info="
+	Push.sh v1.0. 
+	Copyright (C) 2016 Galang23. All Right Reserved.
+	Licensed under GPL v3 or any future GPL version.
+	Thank you for stackoverflow.com which is help me
+	developing this script.
+	This script uses Git program which is licensed under GPLv2.
+"
+
+usage="Usage: simplegit <param> [git other args]
+
+  -h   --help	   Print this help.
+  -s   --status	   Show local repo status. Have you commit it today?
+  -p   --only	   Push only or check the up-to-date of local
+			      repo and remote repo.
+  -c   --commit	   Commit changes only, no push. \e\[41mMUST \`git add\` first!.
+  -A   --all	   Commit changes and push to remote repo.
+  -a   --add	   Add changes only. Like git add command.
+  -c   --cancel	   Cancel any changes
+  -V   --version   Print the version info
+       --original  Use original git command line arguments.
+
+This program use Git as core. You must have git program installed first before use this sript.
+"
+
+commit='echo -n "Commit message: ";
+read MESSAGE;
+git commit -m "$MESSAGE";'
+
+all='git add . -v ;
+echo -n "Commit message: ";
+read MESSAGE;
+git commit -m "$MESSAGE";
+echo "Pushing change to Galang23 @ branch master...";
+git push Galang23 master;
+echo -n "Done!";'
+
+case $1 in 
+--only) git push Galang23 master;;
+--help) echo -e "$usage";;
+--all) eval ${all};; # ${var1} is for Run multi-line command in var1
+--commit) eval ${commit};;
+--cancel) git reset;;
+--status) git status;;
+--version) echo "$info";;
+--original) git $2 $3 $4 $5 $6 $7 $8 $9;;
+*) gitcheck;;
+esac 

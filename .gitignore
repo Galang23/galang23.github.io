@@ -1,8 +1,9 @@
-
+nano
 #Temporary File
 *.tmp
 ~$*.doc
 ~$*.docx
+.~lock.*
 
 # Private files
 *.php
@@ -10,3 +11,6 @@
 *.swf
 *.sh
 simplegit
+
+# Private Folders
+dos2shell
