@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Copyright (C) 2016 Galang23
 #
@@ -20,7 +20,7 @@
 
 gitcheck(){
 	if hash git 2> /dev/null; then
-		echo "No argument specified, please use pu.sh --help for arguments.";
+		echo "No argument specified, please use './push --help' for arguments.";
 		echo "";
 	else
 		echo "ERROR:   You didn't install Git in this computer";
@@ -42,7 +42,7 @@ usage="Usage: simplegit <param> [git other args]
 
   -h   --help	   Print this help.
   -s   --status	   Show local repo status. Have you commit it today?
-  -p   --only	   Push only or check the up-to-date of local
+  -p   --push	   Push only or check the up-to-date of local
 			      repo and remote repo.
   -c   --commit	   Commit changes only, no push. \e\[41mMUST \`git add\` first!.
   -A   --all	   Commit changes and push to remote repo.
@@ -54,6 +54,7 @@ usage="Usage: simplegit <param> [git other args]
 This program use Git as core. You must have git program installed first before use this sript.
 "
 
+# Commit command group
 commit='echo -n "Commit message: ";
 read MESSAGE;
 git commit -m "$MESSAGE";'
@@ -67,8 +68,9 @@ git push Galang23 master;
 echo -n "Done!";'
 
 case $1 in 
---only) git push Galang23 master;;
+--push) git push Galang23 master;;
 --help) echo -e "$usage";;
+--add) git add . ;;
 --all) eval ${all};; # ${var1} is for Run multi-line command in var1
 --commit) eval ${commit};;
 --cancel) git reset;;
@@ -76,4 +78,9 @@ case $1 in
 --version) echo "$info";;
 --original) git $2 $3 $4 $5 $6 $7 $8 $9;;
 *) gitcheck;;
+esac 
+
+case $2 in 
+	--push) $1 && git push Galang23 master;;
+	--commit) $1 && eval ${commit};;
 esac 
