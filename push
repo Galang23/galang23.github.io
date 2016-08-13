@@ -47,7 +47,7 @@ usage="Usage: simplegit <param> [git other args]
   -c   --commit	   Commit changes only, no push. \e\[41mMUST \`git add\` first!.
   -A   --all	   Commit changes and push to remote repo.
   -a   --add	   Add changes only. Like git add command.
-  -c   --cancel	   Cancel any changes
+  -C   --cancel	   Cancel any changes
   -V   --version   Print the version info
        --original  Use original git command line arguments.
 
@@ -64,17 +64,24 @@ echo -n "Commit message: ";
 read MESSAGE;
 git commit -m "$MESSAGE";
 echo "Pushing change to Galang23 @ branch master...";
-git push Galang23 master;
+git push ssh master;
 echo -n "Done!";'
 
 case $1 in 
---push) git push Galang23 master;;
+--push) git push ssh master;;
+-p) git push Galang23 master;;
 --help) echo -e "$usage";;
---add) git add . ;;
+-h) echo -e "$usage";;
+--add) git add -v . ;;
+-a) git add -v . ;;
 --all) eval ${all};; # ${var1} is for Run multi-line command in var1
+-A) eval ${all};;
 --commit) eval ${commit};;
+-c) eval ${commit};;
 --cancel) git reset;;
+-C) git reset;;
 --status) git status;;
+-s) git status;;
 --version) echo "$info";;
 --original) git $2 $3 $4 $5 $6 $7 $8 $9;;
 *) gitcheck;;
