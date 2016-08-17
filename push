@@ -64,11 +64,11 @@ echo -n "Commit message: ";
 read MESSAGE;
 git commit -m "$MESSAGE";
 echo "Pushing change to Galang23 @ branch master...";
-git push ssh master;
+git push Galang23 master;
 echo -n "Done!";'
 
 case $1 in 
---push) git push ssh master;;
+--push) git push Galang23 master;;
 -p) git push Galang23 master;;
 --help) echo -e "$usage";;
 -h) echo -e "$usage";;
@@ -83,6 +83,7 @@ case $1 in
 --status) git status;;
 -s) git status;;
 --version) echo "$info";;
+-V) echo "$info";;
 --original) git $2 $3 $4 $5 $6 $7 $8 $9;;
 *) gitcheck;;
 esac 
