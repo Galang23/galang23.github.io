@@ -30,7 +30,7 @@ gitcheck(){
 }
 
 info="
-	Push.sh v1.0. 
+	Push.sh v1.3. 
 	Copyright (C) 2016 Galang23. All Right Reserved.
 	Licensed under GPL v3 or any future GPL version.
 	Thank you for stackoverflow.com which is help me
@@ -43,8 +43,9 @@ usage="Usage: simplegit <param> [git other args]
   -h   --help	   Print this help.
   -s   --status	   Show local repo status. Have you commit it today?
   -p   --push	   Push only or check the up-to-date of local
-			      repo and remote repo.
-  -c   --commit	   Commit changes only, no push. \e\[41mMUST \`git add\` first!.
+		   repo and remote repo.
+ -pssh --pussh    Push to remote repo via ssh
+  -c   --commit	   Commit changes only, no push. \033\[41mMUST \`git add\` first!.
   -A   --all	   Commit changes and push to remote repo.
   -a   --add	   Add changes only. Like git add command.
   -C   --cancel	   Cancel any changes
@@ -67,9 +68,23 @@ echo "Pushing change to Galang23 @ branch master...";
 git push Galang23 master;
 echo -n "Done!";'
 
+gitssh(){
+# This function is used for pushing to ssh
+	git push ssh master;
+
+}
+
+githttps(){
+# Push via https
+	git push Galang23 master
+
+}
+
 case $1 in 
---push) git push Galang23 master;;
--p) git push Galang23 master;;
+--push) githttps;;
+-p) githttps;;
+--pussh) gitssh;;
+-pssh) gitssh;;
 --help) echo -e "$usage";;
 -h) echo -e "$usage";;
 --add) git add -v . ;;
