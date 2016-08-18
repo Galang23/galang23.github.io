@@ -162,6 +162,10 @@ img {
 	margin: 0 auto;
 	padding: 54px 40px;
 }
+a{
+	color: #666344;
+	text-decoration: none;
+}
 h1 {
 	color: #3e3e3e;
 	font-size: 30px;
@@ -198,6 +202,10 @@ p {
 }
 p a {
 	color: #585858;
+}
+table, th, td {
+    border: 1px solid black;
+	border-collapse: collapse;
 }
 #tagline h1 {
 	margin-left: 20px;
