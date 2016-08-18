@@ -42,6 +42,7 @@ usage="Usage: simplegit <param> [git other args]
 
   -h   --help	   Print this help.
   -s   --status	   Show local repo status. Have you commit it today?
+  -P   --pull      Pull change(s) from remote repo
   -p   --push	   Push only or check the up-to-date of local
 		   repo and remote repo.
  -pssh --pussh    Push to remote repo via ssh
@@ -80,7 +81,13 @@ githttps(){
 
 }
 
+pullhttps(){
+	git pull Galang23 master;
+}
+
 case $1 in 
+--pull) pullhttps;;
+-P) pullhttps;;
 --push) githttps;;
 -p) githttps;;
 --pussh) gitssh;;
