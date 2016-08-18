@@ -81,7 +81,6 @@ githttps(){
 
 }
 
-<<<<<<< HEAD
 pullhttps(){
 	git pull Galang23 master;
 }
@@ -89,9 +88,6 @@ pullhttps(){
 case $1 in 
 --pull) pullhttps;;
 -P) pullhttps;;
-=======
-case $1 in 
->>>>>>> 3992e981e90f1a0f43ebdc46cc14464983e17767
 --push) githttps;;
 -p) githttps;;
 --pussh) gitssh;;
