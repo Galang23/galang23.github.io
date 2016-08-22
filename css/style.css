@@ -207,6 +207,13 @@ table, th, td {
     border: 1px solid black;
 	border-collapse: collapse;
 }
+tr .inside{
+	font-family: "Hobo Std" ; /* Hobo Std Copyright 1987, 1990, 1994, 2001 Adobe System Inc. ARR*/
+	src: ../fonts/HoboStd.otf;
+	text-decoration: none;
+	padding: 0 80px;
+	font-size: auto;
+}
 #tagline h1 {
 	margin-left: 20px;
 }
@@ -432,4 +439,10 @@ table, th, td {
 }
 #connect a.tumbler:hover {
 	background-position: -40px -120px;
+}
+.noscript{
+	text-align: right;
+	margin-top: 100x;
+	margin-right: 200px;
+	background-position: -80px;
 }
