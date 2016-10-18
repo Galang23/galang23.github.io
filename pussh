@@ -68,7 +68,7 @@ read MESSAGE;
 git commit -m "$MESSAGE";
 echo "Pushing change to Galang23 @ branch master...";
 git push ssh master;
-echo -n "Done!";'
+echo -n "Done!\n";'
 
 gitssh(){
 # This function is used for pushing to ssh
