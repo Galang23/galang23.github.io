@@ -90,7 +90,7 @@ case $1 in
 --pull) pullhttps;;
 -P) pullhttps;;
 --push) githttps;;
--p) githttps;;
+-p) gitssh;;
 --pussh) gitssh;;
 -pssh) gitssh;;
 --help) echo -e "$usage";;
