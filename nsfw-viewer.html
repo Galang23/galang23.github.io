@@ -1,0 +1,31 @@
+<html lang='id'>
+	<head>
+		<title> 9GAG NSFW Viewer v1.0 </title>
+		<script>
+			function view(){
+				var img = document.getElementById("9gagID").value;
+				var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
+				window.location = image;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			<p>9GAG NSFW Viewer. Copyright 2016 Galang23</p>
+			9GAG Post ID <9gag.com/ID>: <input type='text' name='9gagID' id="9gagID" value=''>  <button type="button" onclick="view()">View It!</button>
+
+			<noscript style="color: red;"><br><b>
+				You can't use this without JavaScript enabled<br/>
+				Enable JavaScript first to use </b>
+			</noscript>
+		</form>
+		
+		
+		<h3>How it works ?</h3>
+		<p>This tool will crawl the image of that post ID</p>
+		<p>Simply, it will open the main 9GAG image CDN and redirect it to you.</p>
+	</body>
+</html>
+
+
