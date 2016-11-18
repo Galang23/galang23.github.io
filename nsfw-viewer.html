@@ -1,30 +1,77 @@
 <html lang='id'>
 	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="icon" href="/Gambar/favicon.ico" />
 		<title> 9GAG NSFW Viewer v1.0 </title>
-		<script>
-			function view(){
-				var img = document.getElementById("9gagID").value;
-				var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
-				window.location = image;
-			}
-		</script>
-		
-	</head>
+		<script src="/js/view9cdn.js"></script>
+    </head>
+		<title>News title - Galang23</title>
 	<body>
-		<form>
-			<p>9GAG NSFW Viewer. Copyright 2016 Galang23</p>
-			9GAG Post ID <9gag.com/ID>: <input type='text' name='9gagID' id="9gagID" value=''>  <button type="button" onclick="view()">View It!</button>
+		<div id="header">
+			<div>
+				<div class="logo">
+					<a href="/">Galang23</a>
+				</div>
+				<ul id="navigation">
+					<li>
+						<a href="/">Beranda</a>
+					</li>
+					<li>
+						<a href="/features/">Fitur</a>
+					</li>
+					<li class="active">
+						<a href="/news/">Berita</a>
+					</li>
+					<li>
+						<a href="/about/">Tentang</a>
+					</li>
+					<!-- li>
+						<a href="contact.html">Contact</a>
+					</li -->
+				</ul>
+			</div>
+		</div>
+		<div id="contents">
+			<form>
+				<p>9GAG NSFW Viewer. Copyright 2016 Galang23</p>
+				9GAG Post ID <9gag.com/ID>: <br/>
+				<input type='text' name='9gagID' id="9gagID" value=''>  <button type="button" onclick="view()">View It!</button>
 
-			<noscript style="color: red;"><br><b>
-				You can't use this without JavaScript enabled<br/>
-				Enable JavaScript first to use </b>
-			</noscript>
-		</form>
-		
-		
-		<h3>How it works ?</h3>
-		<p>This tool will crawl the image of that post ID</p>
-		<p>Simply, it will open the main 9GAG image CDN and redirect it to you.</p>
+				<noscript style="color: red;"><br><b>
+					You can't use this without JavaScript enabled<br/>
+					Enable JavaScript first to use </b>
+				</noscript>
+			</form>
+			
+			<h3>How it works ?</h3>
+			<p>This tool will crawl the image of that post ID</p>
+			<p>Simply, it will open the main 9GAG image CDN and redirect it to you.</p>
+			<br/>
+			Resulting Picture:
+			<p id="image">
+				<img id="result" src=""/>
+			</p>
+		</div>
+		<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="https://facebook.com/swarnaadhi.galangwicaksono" target="_blank" title='Galang23 di Facebook' class="facebook">
+				               <img src="/Gambar/Facebook.png" height="27" width="27" alt="Facebooknya Galang23" />
+			   </a>
+				<a href="https://plus.google.com/u/0/109238318835174658872/" title="Galang23 di Google+" target="_blank" class="googleplus">
+				<img src="/Gambar/Google+.jpg" width="27" height="27" alt="Galang23 di G+" />
+				</a>
+				<a href="https://github.com/Galang23/" title="Galang23 di GitHub" target="_blank" class="github">
+				<img src="/Gambar/Octocat.png" alt="Galang23 on GitHub" width="27" height="27" /></a>
+				
+				<a class="twitter" href="//twitter.com/Ga_lang23" target="_blank" title="Galang23 di Twitter"><img alt="Galang23 di Twitter" width="27" height="27" src="/Gambar/twitter.png" /></a>
+			</div>
+			<p>
+				 2016 Galang23, All Rights Reserved.	<br/> <i>Terakhir diedit, 18 November 2016, 09:47</i> <br/>Template oleh Zerotype
+			</p>
+		</div>
+	</div>
 	</body>
 </html>
 
