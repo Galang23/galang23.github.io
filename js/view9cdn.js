@@ -39,6 +39,8 @@ function loadHTML(url, fun, storage, param)
 function view(){
 	var img = document.getElementById("9gagID").value;
 	var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
+	var gif =  "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.gif";
 	
 	document.getElementById("result").src = image;
+	document.getElementById("gif").src = gif;
 }
