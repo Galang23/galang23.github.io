@@ -3,6 +3,7 @@ nano
 *.tmp
 ~$*.doc
 ~$*.docx
+~$*.*
 .~lock.*
 
 # Private files
