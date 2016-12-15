@@ -39,8 +39,9 @@ function loadHTML(url, fun, storage, param)
 function view(){
 	var img = document.getElementById("9gagID").value;
 	var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
-	var gif =  "http://img-9gag-fun.9cache.com/photo/" + img + "_460sa.gif";
-	
+	//var gif =  "http://img-9gag-fun.9cache.com/photo/" + img + "_460sa.gif"; //gif is  deprecated. MP4 used instead.
+	var vid =  "http://img-9gag-fun.9cache.com/photo/" + img + "_460sv.mp4";
 	document.getElementById("result").src = image;
-	document.getElementById("gif").src = gif;
+	// document.getElementById("gif").src = gif; //GIF is deprecated. MP4 used instead.
+	document.getElementById("vid").src = vid;
 }
