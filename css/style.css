@@ -162,6 +162,13 @@ img {
 	margin: 0 auto;
 	padding: 54px 40px;
 }
+li {
+	color: #585858;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 30px;
+	/* Copied from <p> style */
+}
 a{
 	color: #666344;
 	text-decoration: none;
