@@ -14,6 +14,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: "HoboStd";
+	src: url("../fonts/HoboStd.otf");
+}
 body {
 	background-color: #fff;
 	font-family: 'OpenSans';
@@ -48,7 +52,7 @@ img {
 /*------------------------------ HEADER ------------------------------*/
 #header {
 	background-color: #eee;
-	/*background-image: ;*/
+	background-image: url(/Gambar/snow-layer.jpeg); /*Ganti dengan snow-layer.jpg saat menjelang natal;Ganti dengan kembang-api.jpg saat mendekati tahun baru; Ganti dengan gambar CPU Intel saat biasanya.*/
 	border-bottom: 1px solid #e6e6e6;
 	padding: 27px 0
 }
@@ -101,7 +105,7 @@ img {
 	text-align: center;
 }
 #navigation li a {
-	color: #818181;
+	color: darkred; /*818181*/
 	font-size: 15px;
 	line-height: 30px;
 	text-decoration: none;
@@ -110,7 +114,7 @@ img {
 	color: #000;
 }
 #navigation li.active a {
-	color: #f99600;
+	color: darkgreen; /*f99600*/
 }
 #adbox {
 	background: url(../images/bg-adbox.jpg) repeat-x left top;
@@ -215,11 +219,10 @@ table, th, td {
 	border-collapse: collapse;
 }
 tr .inside{
-	font-family: "Hobo Std" ; /* Hobo Std Copyright 1987, 1990, 1994, 2001 Adobe System Inc. ARR*/
-	src: ../fonts/HoboStd.otf;
+	font-family: "HoboStd" ; /* Hobo Std Copyright 1987, 1990, 1994, 2001 Adobe System Inc. ARR*/
 	text-decoration: none;
 	padding: 0 80px;
-	font-size: auto;
+	font-size: 100%;
 }
 #tagline h1 {
 	margin-left: 20px;
@@ -449,7 +452,8 @@ tr .inside{
 }
 .noscript{
 	text-align: right;
-	margin-top: 100x;
-	margin-right: 200px;
-	background-position: -80px;
+	margin-top: 0px;
+	margin-right: 0px;
+	background-position: 0px;
+	font-size: 75%;
 }
