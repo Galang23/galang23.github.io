@@ -52,7 +52,7 @@ img {
 /*------------------------------ HEADER ------------------------------*/
 #header {
 	background-color: #eee;
-	background-image: url(/Gambar/snow-layer.jpeg); /*Ganti dengan snow-layer.jpg saat menjelang natal;Ganti dengan kembang-api.jpg saat mendekati tahun baru; Ganti dengan gambar CPU Intel saat biasanya.*/
+	/*background-image: url(/Gambar/kembang-api2.jpeg); /*Ganti dengan kembang-api.jpg saat menjelang natal;Ganti dengan kembang-api2.jpeg saat mendekati tahun baru; Ganti dengan gambar CPU Intel saat biasanya.*/
 	border-bottom: 1px solid #e6e6e6;
 	padding: 27px 0
 }
@@ -67,7 +67,7 @@ img {
 	margin-right: 20px;
 }
 #header .logo a {
-	background: url(../Gambar/LogoNatal.png) no-repeat center top; /* */
+	background: url(../Gambar/LogoHalaman.png) no-repeat center top; /* */
 	color: #000;
 	display: block;
 	font: 15px/30px 'Play';
@@ -105,7 +105,7 @@ img {
 	text-align: center;
 }
 #navigation li a {
-	color: darkred; /*818181*/
+	color: #818181; /*818181*/ /*darkred untuk natal*/ /*yellow utk...*/
 	font-size: 15px;
 	line-height: 30px;
 	text-decoration: none;
@@ -114,7 +114,7 @@ img {
 	color: #000;
 }
 #navigation li.active a {
-	color: darkgreen; /*f99600*/
+	color: #f99600; /*f99600*/ /*darkgreen untuk natal*/
 }
 #adbox {
 	background: url(../images/bg-adbox.jpg) repeat-x left top;
@@ -219,7 +219,7 @@ table, th, td {
 	border-collapse: collapse;
 }
 tr .inside{
-	font-family: "HoboStd" ; /* Hobo Std Copyright 1987, 1990, 1994, 2001 Adobe System Inc. ARR*/
+	font-family: "HoboStd" ; /* Hobo Std Copyright 1987, 1990, 1994, 2001 Adobe System Inc. All Rights Reserved*/
 	text-decoration: none;
 	padding: 0 80px;
 	font-size: 100%;
@@ -308,6 +308,13 @@ tr .inside{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+.home_sidebar {
+	float: right;
+	top: 200px;
+	width: 200px;
+	border-left: 1px solid grey;
+	border-bottom: 1px solid grey;
 }
 .news li {
 	border-top: 1px solid #d5d5d5;

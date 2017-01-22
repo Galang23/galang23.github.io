@@ -1,0 +1,126 @@
+<html lang='id' >
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="icon" href="/Gambar/favicon.ico" />
+		<title> 9GAG NSFW Viewer v2.0 </title>
+		<script src="/js/view9cdn.js"></script>
+		<script>
+			window.onload = function(){
+				var PostID = getQuery("postID") ? PostID : getQuery("9gagID");
+				var img = PostID;
+				var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
+				var vid =  "http://img-9gag-fun.9cache.com/photo/" + img + "_460sv.mp4";
+				
+				document.getElementById("result").src = image;
+				document.getElementById("vid").src = vid;
+				
+				document.getElementById("9gagID").value = PostID;
+			}
+		</script>
+    </head>
+	<body>
+		<div id="header">
+			<div>
+				<div class="logo">
+					<a href="/">Galang23</a>
+				</div>
+				<ul id="navigation">
+					<li>
+						<a href="/">Beranda</a>
+					</li>
+					<li>
+						<a href="/features/">Fitur</a>
+					</li>
+					<li class="active">
+						<a href="/news/">Berita</a>
+					</li>
+					<li>
+						<a href="/about/">Tentang</a>
+					</li>
+					<!-- li>
+						<a href="contact.html">Contact</a>
+					</li -->
+				</ul>
+			</div>
+		</div>
+		<div id="contents">
+			<h2>9GAG NSFW Viewer <span class='author' style="font-size: 12px">Copyright 2017 Galang23</span>
+</h2><br>
+			<form method="GET" action="/apps/nsfw-viewer.html">
+				<noscript style="color: red;"><br><b>
+					You can't use this without JavaScript enabled<br/>
+					Enable JavaScript first to use </b>
+				</noscript>
+				<p id="keterangan">
+					9GAG NSFW Viewer adalah cara terbaik dan mungkin adalah satu-satunya<br/>
+					cara untuk melihat gambar dan GIF 9GAG yang termasuk kategori NSFW.<br/>
+				</p>	
+				<p id="keterangan-2">	
+					Tujuan saya membuat alat ini awalnya hanya untuk menikmati seksi baru di 9GAG, <a href="http://9gag.com/darkhumor">Dark Humor</a>
+					yang ternyata juga berfungsi untuk seksi <a href="http://9gag.com/nsfw">9GAG NSFW</a>, atau tepatnya semua bisa.<br/>
+				</p>
+				
+				<h3>How it works ?</h3>
+				<p>
+					This tool will open the main 9GAG image CDN and redirect it to you.
+					<br/>
+					Simply, it will crawl the image by the post ID you've entered.
+				</p>
+				9GAG Post ID <9gag.com/ID> <br/>
+				<input type='text' name='9gagID' id="9gagID" value=''/>  <button type="button" onclick="view()">View It</button> 
+				<input type="submit" style="visibility: hidden" value="Submit" />
+			</form>
+			<br/>
+			Resulting Picture:
+			<p id="image">
+				<img id="result" src=""/>
+			</p>
+			<p>
+				If picture looks weird, here is a MP4 of it. GIF is deprecated on 9GAG, so MP4 used instead.<br>
+				<video id="vid" src="" autoplay loop controls="true"> </video>
+			</p>
+			<!-- begin wwww.htmlcommentbox.com -->
+			 <div id="HCB_comment_box">
+			 	Loading comments...
+			 </div>
+			 <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+			 <script type="text/javascript" id="hcb">/*<!--*/ 
+				if(!window.hcb_user){
+					hcb_user={};
+				} (
+					function(){
+					 var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";
+					 s.setAttribute("type","text/javascript");
+					 s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24a%2FsphKqhQCE.Y2ihgtsov."+"&opts=16862&num=10&ts=1481528097156");
+					 if (typeof s!="undefined") 
+					  document.getElementsByTagName("head")[0].appendChild(s);
+					 }
+				)(); 
+			/*-->*/ </script>
+			<!-- end www.htmlcommentbox.com -->
+		</div>
+ 			<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+		<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="https://facebook.com/swarnaadhi.galangwicaksono" target="_blank" title='Galang23 di Facebook' class="facebook">
+				               <img src="/Gambar/Facebook.png" height="27" width="27" alt="Facebooknya Galang23" />
+			   </a>
+				<a href="https://plus.google.com/u/0/109238318835174658872/" title="Galang23 di Google+" target="_blank" class="googleplus">
+				<img src="/Gambar/Google+.jpg" width="27" height="27" alt="Galang23 di G+" />
+				</a>
+				<a href="https://github.com/Galang23/" title="Galang23 di GitHub" target="_blank" class="github">
+				<img src="/Gambar/Octocat.png" alt="Galang23 on GitHub" width="27" height="27" /></a>
+				
+				<a class="twitter" href="//twitter.com/Ga_lang23" target="_blank" title="Galang23 di Twitter"><img alt="Galang23 di Twitter" width="27" height="27" src="/Gambar/twitter.png" /></a>
+			</div>
+			<p>
+				© 2017 Galang23, All Rights Reserved.	<br/> <i>Terakhir diedit, 21 Januari 2017, 20:43</i> <br/>Template oleh Zerotype
+			</p>
+		</div>
+	</div>
+	</body>
+</html>
+
+
