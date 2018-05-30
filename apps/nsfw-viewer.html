@@ -7,10 +7,13 @@
 		<script src="/js/view9cdn.js"></script>
 		<script>
 			window.onload = function(){
-				var PostID = getQuery("postID") ? PostID : getQuery("9gagID");
-				if(PostI.length === 0 {
+				var PostID = getQuery("postID") ? getQuery("postID") : getQuery("9gagID");
+				var img = PostID;
+				console.log(typeof PostID);
+
+				if(PostID == "false" || PostID == false){
 					document.getElementById("result").src = "https://learn.getgrav.org/user/pages/11.troubleshooting/01.page-not-found/error-404.png";
-	                document.getElementById("vid").src = "http://i0.kym-cdn.com/photos/images/original/001/157/196/bcf.gif";
+					document.getElementById("9gagID").value = '';
 				} else {
 				var image = "http://img-9gag-fun.9cache.com/photo/" + img + "_700b.jpg";
 				var vid =  "http://img-9gag-fun.9cache.com/photo/" + img + "_460sv.mp4";
@@ -88,7 +91,8 @@
 			 <div id="HCB_comment_box">
 			 	Loading comments...
 			 </div>
-			 <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+			 <!-- link rel="stylesheet" type="text/css" 
+			 href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
 			 <script type="text/javascript" id="hcb">/*<!--*/ 
 				if(!window.hcb_user){
 					hcb_user={};
@@ -101,10 +105,11 @@
 					  document.getElementsByTagName("head")[0].appendChild(s);
 					 }
 				)(); 
-			/*-->*/ </script>
+			/**/ </script>
 			<!-- end www.htmlcommentbox.com -->
 		</div>
- 			<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ 			<!-- link rel="stylesheet" type="text/css" 
+ 			href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" / -->
 		<div id="footer">
 		<div class="clearfix">
 			<div id="connect">
